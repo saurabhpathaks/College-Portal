@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Details</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<script>
+function show(){
+	
+	
+	var name=document.getElementById("txtname").value
+if(name.length==0)
+	{
+	/* document.getElementById("msg").innerText="UserId" */
+	document.getElementById("msg1").innerHTML="<b><i class='fas fa-home'>UserId</i>"
+	}
+else{
+	var divstr="<div id='divname' style='width: 90%; height: auto; color: red; background-color: cyan;'>"
+    var divstr1="</div>"
+    document.getElementById("msg1").innerHTML=divstr+name+divstr1
+}
+	
+}
+
+</script>
+</head>
+<body>
+<input id="txtname" type="text" name="txtname" placeholder="Enter the UserId">
+<p id="msg" style="color: red"></p>
+<span id="msg1"></span>
+<button onClick="show()">Show Details</button>
+
+</body>
+</html>

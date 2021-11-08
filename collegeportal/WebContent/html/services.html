@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Services</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+<link href="/collegeporta/images/favicon.ico" type="image/x-icon"
+	rel="shortcut icon">
+<link href="/collegeportal/images/favicon.ico" type="image/x-icon"
+	rel="icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style type="text/css">
+li {
+	font-family: YellowTail;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: white;
+	margin-left: 60px;
+}
+facbtn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.menu{
+background-color: grey;
+width: 170px;
+height: 500px;
+margin-left: 75px;
+border-radius: 10px;
+}
+
+</style>
+
+<script >
+ 
+function show1() {
+	
+	var tagref1 = document.getElementById("dispitem1");
+	tagref1.style.display = "block";
+	document.getElementById("dispitem2").style.display = "none";
+	
+}
+function show2() {
+		var tagref2 = document.getElementById("dispitem2");
+		tagref2.style.display = "block";
+		document.getElementById("dispitem1").style.display = "none";
+}
+</script>
+</head>
+<body style="margin: 0px;">
+<div class="container-fluid" style="margin: 0px; width: 100%; height: 60px;  background-color: black;">
+<i class="fas fa-search fa-2x" style="float: right; color: grey;"></i>
+<i class="fas fa-th-list fa-2x" style="margin-left: 10px; margin-top: 10px; color: grey;"></i>
+<div style="margin: 0px; width: 100%; height: 600px;  background-color: grey;">
+<div class="container-fluid" style="width: 400px; height: 500px; background-color: black; float: left; margin-left: 100px; ">
+<button  class="facbtn" onclick="show1()" style="font-size: 22px; color: white; background-color: grey; font-family: YellowTail; font-weight: bold; border-style: solid; border-color:grey; border-width: 3px; border-radius: 6px; margin-top: 20px; margin-left: 70px">
+			Faculty Members</button>
+
+		<ul id="dispitem1" style="display: none;">
+		
+			<li style="margin-top: 25px;">Dean. S. Ahmed Ali</li>
+			<li>prof. gaurav kant shankhdhar</li>
+			<li>prof. harendra pal</li>
+			<li>prof. gaurav sharma</li>
+			<li>prof. archana singh</li>
+			<li>prof. rajan singh</li>
+			<li>asst. prof. devbrat khare</li>
+			<li>asst. prof. pawan kumar verma</li>
+			<li>asst. prof. nadeem hussain</li>
+		
+		</ul>
+		</div>
+
+<div class="container-fluid" style="width: 400px; height: 500px; background-color: black; margin-left: 700px; margin-top: 20px; ">
+<button onclick="show2()"
+			style="font-size: 22px; color: white; background-color: grey; font-family: YellowTail; font-weight: bold; border-style: solid; border-color: grey; border-width: 3px; border-radius: 4px; margin-top: 20px; margin-left: 70px">
+			Management Members</button>
+			
+			<ul id="dispitem2" style="display: none;">
+			<li style="margin-top: 25px;">Dean. S. Ahmed Ali</li>
+			<li>prof. gaurav kant shankhdhar</li>
+			<li>prof. harendra pal</li>
+			<li>prof. devbrat khare</li>
+		</ul>
+</div>
+
+</div>
+</div>
+</body>
+</html>

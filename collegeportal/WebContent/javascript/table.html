@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Table</title>
+<script >
+function show(){
+	var num=document.getElementById("number").value;
+	//alert(num)
+	tabledata=""
+	var tblopen="<table border=3 cellspaceing=3>"
+	for(var i = 1; i <= 10; i++) {
+		
+		tabledata=tabledata+"<tr><td>" + num + "</td><td>*</td><td>" + i + "</td><td>=</td><td>" + num*i + "</td></tr>";
+		//alert(tabledata)
+	}
+    var tblclose="</table>"
+  
+    document.getElementById("divtable").innerHTML=tblopen+tabledata+tblclose
+      
+}
+
+</script>
+<style >
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50px;
+}
+input[type=Number] {
+  padding: 12px 20px;
+  margin-left: 40px;
+  background: cyan; 
+  border: 10px;
+  outline: 4px;
+  font-size: 10px;
+}
+
+</style>
+</head>
+<body bgcolor="black">
+<div id="divtable" style="background-color: grey; width: 300px; height: 400px; margin-top: 80px; margin-left: 40%;">
+
+<input id="number" type="Number"  placeholder="Enter any Number">
+<span id="result"></span>
+<button onClick="show()" class="button">Go</button>
+
+</div>
+</body>
+</html>
